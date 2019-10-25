@@ -53,7 +53,7 @@ To insert a geometry use a subtype of `Geometry` like `Point` or `Line`
 
 ## Hibernate
 
-To enable the interpretation of geometry objects, H2 must be configured with a proper dialect.
+To enable the interpretation of geometry objects, hibernate must be configured with a proper dialect.
 
 ```properties
 spring.jpa.properties.hibernate.dialect = org.hibernate.spatial.dialect.h2geodb.GeoDBDialect
@@ -68,4 +68,4 @@ Add the dependency to maven
 ```
 
 This dependency enables the deserialization of the Geometry object stored in the H2 database.
-The Geometry is converted to org.locationtech.jts.geom.Point.
+In this example the Geometry is converted to org.locationtech.jts.geom.Point.
