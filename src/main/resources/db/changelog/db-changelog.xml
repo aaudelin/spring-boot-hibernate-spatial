@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="all" author="aaudelin" context="all">
+        <createTable tableName="coordinate">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="id_key"/>
+            </column>
+            <column name="name" type="VARCHAR"/>
+            <column name="wgs84" type="geometry"/>
+        </createTable>
+
+        <insert tableName="coordinate">
+            <column name="id">1</column>
+            <column name="name">Coordinate name</column>
+            <column name="wgs84">POINT(-0.369643801033 43.2946162781)</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
