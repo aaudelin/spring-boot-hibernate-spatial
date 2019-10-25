@@ -69,9 +69,3 @@ Add the dependency to maven
 
 This dependency enables the deserialization of the Geometry object stored in the H2 database.
 The Geometry is converted to org.locationtech.jts.geom.Point.
-
-
-
-
- 
-
