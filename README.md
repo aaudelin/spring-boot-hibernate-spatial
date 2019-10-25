@@ -1,4 +1,4 @@
-# Spring Boot - GeoDB Example
+# Spring Boot - H2 GEO Example
 
 This project is an implementation example of H2 - Geo DB.
 
