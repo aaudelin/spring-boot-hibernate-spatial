@@ -1,6 +1,6 @@
 # Spring Boot - H2 GEO Example
 
-This project is an implementation example of H2 - Geo DB.
+This project is a **Kotlin** implementation example of H2 - Geo DB.
 
 It uses Spring Boot 2 with Hibernate 5.4.6 and H2 1.4.
 
